@@ -19,7 +19,7 @@ const App = () => {
 
 	const Header = (props) => {
 		return <h1>{props.course}</h1>;
-	};
+	}; 
 	const Content = ({ parts }) => (
 		<>
 			<Part name={parts[0].name} number={parts[0].exercises} />
@@ -27,12 +27,12 @@ const App = () => {
 			<Part name={parts[2].name} number={parts[2].exercises} />
 		</>
 	);
-	const Part = ({ name, number }) => (
+	const Part = () => (
 		<p>
 			{name} {number}
 		</p>
 	);
-	const Total = ({ parts }) => (
+	const Total = () => (
 		<p>
 			Number of exercises{" "}
 			{parts[0].exercises + parts[1].exercises + parts[2].exercises}
